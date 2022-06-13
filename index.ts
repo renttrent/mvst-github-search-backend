@@ -59,7 +59,7 @@ app.post(
 );
 
 try {
-  app.listen(port, (): void => {
+  app.listen(process.env.PORT || port, (): void => {
     console.log(`⚡Listening on port ${port}`);
   });
 } catch (error) {
