@@ -60,7 +60,7 @@ app.post("/auth", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     }
 }));
 try {
-    app.listen(port, () => {
+    app.listen(process.env.PORT || port, () => {
         console.log(`⚡Listening on port ${port}`);
     });
 }
